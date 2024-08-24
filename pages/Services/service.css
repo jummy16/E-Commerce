@@ -1,0 +1,156 @@
+.service-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.service-img2{
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+}
+.service-img img{
+  width: 100%;
+  height: 40vh;
+  margin-top: 7rem;
+  object-fit: fill;
+}
+.service-img2 img{
+  width: 100%;
+  height: 40vh;
+  margin-top: 7rem;
+  object-fit: fill;
+}
+.question {
+  text-align: center;
+  margin-top: 2rem;
+  color: #cbf802;
+}
+.trade-in {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header-right {
+  text-align: center;
+  margin-top: 5rem;
+}
+.header-right h3 {
+  margin-top: 4rem;
+  color: #cbf802;
+}
+.second-section {
+  text-align: center;
+  margin-top: 4rem;
+}
+.second-section h3 {
+  color: #cbf802;
+}
+.second-section-p {
+  font-size: medium;
+  font-weight: 100;
+  margin-top: 2rem;
+  color: black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 4rem;
+  gap: 1vw;
+}
+.grid1,
+.grid2,
+.grid3 {
+  text-align: center;
+  background-color: aliceblue;
+  padding: 1.5rem 1rem 1rem 1rem;
+}
+.finance-grid{
+  display: grid;
+  grid-template-columns: 15% 1fr 1fr 15%;
+  margin-top: 2rem;
+  width: 100%;
+  gap: 4vw;
+}
+.grid-1{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.grid-2{
+  grid-column-start: 3;
+  grid-column-end: 4;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.finance{
+  margin: 5px;
+  border-radius: 10px;
+  border: solid 1px #d5d5d5;
+  background-color: #f9f9f9;
+}
+.finance a{
+  text-decoration: none;
+}
+.learn-more{
+  padding:0.4rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.learn-more:hover{
+  background-color: #cbf802;
+}
+.repairs21,.repairs22,.repairs23{
+  text-align: center;
+  margin-top: 5rem;
+}
+.repair-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 3rem;
+  gap: 2vw;
+  margin-top: 3rem;
+}
+.repair-container2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2vw;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+
+@media (max-width: 1000px) {
+  .trade-in {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .header-right{
+    margin-top: -1rem;
+  }
+  .finance-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .grid-2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .repair-container, .repair-container2{
+    grid-template-columns: 1fr;
+  }
+  .service-img2 img{
+    height: 30vh;
+  }
+}
